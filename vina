@@ -1,0 +1,65 @@
+
+# 配体转换命令（直接把SMILES作为输入，输出：ligand.pdbqt）
+
+RMC6236    obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3C[C@@H]3C)=O)CC4=NC(C5=CC=C6N(C(C7=C([C@@H](OC)C)N=CC(N8CCN(CC8)C)=C7)=C(C6=C5)CC(C)(COC2=O)C)CC)=CS4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+i1 	obabel -:"[H][C@@]12C(C3)CC3N(C([C@@H](NC([C@H]4[C@H](C)[C@@H]4C)=O)CC5=NC(C6=CC7=C8N(C(C9=C([C@@H](OC)C)N=CC(N%10CCN(C%11(C%12)CC%12(CN%13CCN(C)CC%13)C%11)CC%10)=C9)=C(C8=C6)CC(C)(COC2=O)C)CCC7)=CS5)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+i2	obabel -:"CN1CCN(CC23CCC(C3)(N(CC4)CCN4C5=CC(C(N(CCC6)C7=C6C=C8C9=CSC(C[C@H](NC([C@H]%10[C@H](C)[C@@H]%10C)=O)C(N(N%11)C%12CC(C%12)[C@]%11%13[H])=O)=N9)=C(C7=C8)CC(C)(COC%13=O)C)=C([C@@H](OC)C)N=C5)CC2)CC1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+i3	obabel -:"CN1CCN(CC23CCC(C3)(N(CC4)CCN4C5=CC(C(N(CCC6)C7=C6C=C8C9=CSC(C[C@H](NC([C@H]%10[C@H](C)[C@@H]%10C)=O)C(N(N%11)C%12CC(C%12)[C@]%11%13[H])=O)=N9)=C(C7=C8)CC(C)(COC%13=O)C)=C([C@@H](OC)C)N=C5)CO2)CC1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger	
+i4	obabel -:"CN1CCN(CC2(CC3)CCC3(N(CC4)CCN4C5=CC(C(N(CCC6)C7=C6C=C8C9=CSC(C[C@H](NC([C@H]%10[C@H](C)[C@@H]%10C)=O)C(N(N%11)C%12CC(C%12)[C@]%11%13[H])=O)=N9)=C(C7=C8)CC(C)(COC%13=O)C)=C([C@@H](OC)C)N=C5)CC2)CC1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger	
+ii1	obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(CC6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger	
+ii2	obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(C(F)(F)C6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+ii3	obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(CC6(F)F)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+ii4   obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(OC6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+ii5   obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(CO6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+ii6   obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(OCC6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+ii7	obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(COC6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+ii8	obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3[C@H](C)[C@@H]3C)=O)CC4=NC(C5=C(CCO6)C=C7N(C(C8=C([C@@H](OC)C)N=CC(N9CCN(CC9)C)=C8)=C(C7=C5)CC(C)(COC2=O)C)CC)=C6S4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+
+vina --config vina_config.txt --out output.pdbqt > vina_log.txt 2>&1
+
+pymol 
+load receptor.pdbqt, receptor
+load output.pdbqt, ligand_poses
+ #只显示第1个构象（最优）
+set state, 1, ligand_poses
+
+# 受体：卡通+表面（灰色）
+show cartoon, receptor
+show surface, receptor
+color gray80, receptor
+set transparency, 0.3, receptor  # 表面半透明
+
+# 配体：棍状（彩色）
+show sticks, ligand_poses
+color cyan, ligand_poses  # 主链青色
+color red, ligand_poses and elem O  # 氧红色
+color blue, ligand_poses and elem N  # 氮蓝色
+color purple, ligand_poses and elem S  # 硫黄色
+color yellow, ligand_poses and elem F  # F绿色
+
+# 背景白色
+bg_color white
+
+# 显示配体与受体之间的氢键（距离<3.2Å）
+distance hbonds, receptor, ligand_poses, 3.2
+color green, hbonds
+set dash_width, 2.0, hbonds
+set dash_gap, 0.3, hbonds
+
+# 选中配体周围5Å的残基
+select pocket, receptor within 5 of ligand_poses
+show sticks, pocket
+color orange, pocket
+
+# 1. 选中最优构象（Mode 1）
+select best_lig, ligand_poses and state 1
+
+# 2. 导出为单独PDB文件（推荐，兼容性最好）
+save best_ligand.pdb, best_lig
+
+# 3. 导出受体+最优配体复合物
+save complex_receptor_ligand.pdb, (receptor or best_lig)
+zoom ligand_poses
+
+
+
