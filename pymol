@@ -1,10 +1,11 @@
 reinitialize
 load 9bg6.pdb
 iterate organic, print(resn)
-iterate resn A1AH, print(chain, resi, name)#A1AH × 2分别位于：chain C  chain D#我们 docking 只需要：chain A protein + 靠近它的 A1AH
+iterate resn A1AH, print(chain, resi, name)#A1AH×2分别位于chain C D#我们 docking 只需要：chain A protein + 靠近它的 A1AH
 select ref_lig, chain D and resn A1AH #选择正确 ligand
-count_atoms ref_lig# [27.368, -25.428, -14.097]
-centerofmass ref_lig#box
+count_atoms ref_lig  count_atoms: 58 atoms
+centerofmass ref_lig  # [27.368, -25.428, -14.097]
+get_extent ref_lig 
 # cmd.extent: min: [  22.255, -30.668, -21.455]
 # cmd.extent: max: [  35.831, -19.885,  -3.692]
 #经验上，通常会在 ligand 的每个方向上多留 4–6 Å 左右的缓冲。
@@ -22,5 +23,6 @@ zoom ref_lig, 10
 
 create kras_A_clean, (chain A and polymer.protein) or (chain A and resn GNP) or (chain A and resn MG) or (chain D and resn A1AH)#创建干净 receptor：
 save 9bg6_chainA_clean.pdb, kras_A_clean
+
 
 
