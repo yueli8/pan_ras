@@ -1,0 +1,8 @@
+1. rcsb 9bg6   downlaod  PDBx/mmCIF Format  9BG6.cif. 点击两次，一次出现空白，再点击一次。
+2. Pymol 出现图像之后，在命令行中save 9bg6.pdb
+OR  cd /Users/yl/Documents/affinity/9bg6_pan_ras
+load 9bg6.pdb
+remove not chain A
+ount_atoms chain A #count_atoms: 1533 atoms
+count_atoms not chain A #count_atoms: 0 atoms
+save 9bg6_chainA.pdb
