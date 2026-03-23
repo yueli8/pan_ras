@@ -11,4 +11,10 @@ save 9bg6_chainA.pdb
 (rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.mol
 (rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.sdf
 (rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.mol2
+#改成3D
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236_3d.mol -h --gen3d
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236_3d.sdf -h --gen3d
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236_3d.mol2 -h --gen3d
+
+
 #maestro  里面不识别mol2 file
