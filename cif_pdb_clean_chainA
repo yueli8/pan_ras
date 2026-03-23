@@ -1,8 +1,14 @@
 1. rcsb 9bg6   downlaod  PDBx/mmCIF Format  9BG6.cif. 点击两次，一次出现空白，再点击一次。
 2. Pymol 出现图像之后，在命令行中save 9bg6.pdb
+
 OR  cd /Users/yl/Documents/affinity/9bg6_pan_ras
 load 9bg6.pdb
 remove not chain A
 ount_atoms chain A #count_atoms: 1533 atoms
 count_atoms not chain A #count_atoms: 0 atoms
 save 9bg6_chainA.pdb
+#ligand *.smi chang to mol,sdf and mol2 files 
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.mol
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.sdf
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.mol2
+#maestro  里面不识别mol2 file
