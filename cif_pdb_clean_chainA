@@ -16,5 +16,7 @@ save 9bg6_chainA.pdb
 (rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236_3d.sdf -h --gen3d
 (rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236_3d.mol2 -h --gen3d
 
+打开maestro，导入mol或者sdf文件#maestro  里面不识别mol2 file
+source 为workspace 已经加载了rmc6236_3d结构。如果pdb下载，点击get pdb输入ip自动下载。
+review structure  global settings
 
-#maestro  里面不识别mol2 file
