@@ -1,3 +1,5 @@
+cd /Users/yl/Documents/affinity/GLP1
+
 reinitialize
 load 9bg6.pdb
 iterate organic, print(resn)
