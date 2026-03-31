@@ -1,5 +1,14 @@
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.mol
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.sdf
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina/smiles$ obabel -ismi rmc6236.smi -omol -O rmc6236.mol2
 
 # 配体转换命令（直接把SMILES作为输入，输出：ligand.pdbqt）
+
+以i2为例子
+(rdkit-env) li@li-ThinkStation-P3-Tower-Gen-2:~/autodock_vina$ obabel -:"CN1CCN(CC23CCC(C3)(N(CC4)CCN4C5=CC(C(N(CCC6)C7=C6C=C8C9=CSC(C[C@H](NC([C@H]%10[C@H](C)[C@@H]%10C)=O)C(N(N%11)C%12CC(C%12)[C@]%11%13[H])=O)=N9)=C(C7=C8)CC(C)(COC%13=O)C)=C([C@@H](OC)C)N=C5)CC2)CC1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
+
+1 molecule converted
+
 
 RMC6236    obabel -:"[H][C@@]12CCCN(C([C@@H](NC([C@H]3C[C@@H]3C)=O)CC4=NC(C5=CC=C6N(C(C7=C([C@@H](OC)C)N=CC(N8CCN(CC8)C)=C7)=C(C6=C5)CC(C)(COC2=O)C)CC)=CS4)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
 i1 	obabel -:"[H][C@@]12C(C3)CC3N(C([C@@H](NC([C@H]4[C@H](C)[C@@H]4C)=O)CC5=NC(C6=CC7=C8N(C(C9=C([C@@H](OC)C)N=CC(N%10CCN(C%11(C%12)CC%12(CN%13CCN(C)CC%13)C%11)CC%10)=C9)=C(C8=C6)CC(C)(COC2=O)C)CCC7)=CS5)=O)N1" -O ligand.pdbqt -h --gen3d --partialcharge gasteiger
